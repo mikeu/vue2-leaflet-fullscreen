@@ -1,0 +1,24 @@
+{
+  "name": "vue2-leaflet-fullscreen",
+  "version": "1.0.0",
+  "description": "Leaflet.fullscreen component for Vue2Leaflet",
+  "main": "LControlFullscreen.vue",
+  "scripts": {
+    "example": "poi --serve"
+  },
+  "repository": "https://github.com/mikeu/vue2-leaflet-fullscreen",
+  "author": "Michael Underwood",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@types/leaflet": "^1.5.17",
+    "leaflet": "^1.6.0",
+    "poi": "^12.9.0",
+    "vue": "^2.6.11",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "dependencies": {
+    "leaflet-fullscreen": "https://github.com/Leaflet/Leaflet.fullscreen",
+    "vue2-leaflet": "^2.0.0"
+  }
+}
