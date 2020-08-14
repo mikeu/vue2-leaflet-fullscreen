@@ -4,12 +4,17 @@
       style="height: 400px"
       :center="mapCentre"
       :zoom="mapZoom"
+      @fullscreenchange="fullscreenChanged"
+      ref="map"
     >
       <l-tile-layer
         :url="tileUrl"
         :attribution="tileAttribution"
       />
-      <l-control-fullscreen position="topleft" />
+      <l-control-fullscreen
+          position="topleft"
+          :options="fullscreenOptions"
+      />
     </l-map>
   </div>
 </template>
@@ -30,8 +35,23 @@ export default {
       mapZoom: 10,
       tileUrl: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
       tileAttribution: '&copy; <a href="//osm.org/copyright">OpenStreetMap</a> contributors',
+      fullscreenOptions: {
+        title: {
+          'false': 'Switch to full-screen view',
+          'true': 'Exit full-screen mode',
+        },
+      },
     };
   },
+  methods: {
+    fullscreenChanged () {
+      if (this.$refs.map.mapObject.isFullscreen()) {
+        console.log('Entered full-screen mode');
+      } else {
+        console.log('Left full-screen mode');
+      }
+    },
+  }
 };
 </script>
 
