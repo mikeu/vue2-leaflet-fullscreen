@@ -33,7 +33,9 @@ in which to display the control.
 For example,
 ```html
 <l-map>
-  <l-control-fullscreen :options="{ 'false': 'Go big!', 'true': 'Be regular' }" position="topleft"/>
+  <l-control-fullscreen position="topleft"
+      :options="{ title: { 'false': 'Go big!', 'true': 'Be regular' } }"
+  />
   <!-- other map components -->
 </l-map>
 ```
