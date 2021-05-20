@@ -1,6 +1,6 @@
 {
   "name": "vue2-leaflet-fullscreen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Leaflet.fullscreen component for Vue2Leaflet",
   "main": "LControlFullscreen.vue",
   "scripts": {
