@@ -18,7 +18,7 @@
     "vue-template-compiler": "^2.6.11"
   },
   "dependencies": {
-    "leaflet-fullscreen": "https://github.com/Leaflet/Leaflet.fullscreen",
+    "leaflet-fullscreen": "^1.0.2",
     "vue2-leaflet": "^2.0.0"
   }
 }
